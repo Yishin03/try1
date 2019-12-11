@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+tutorial by sir martin
+        </title>
+
+
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
+
+
+    </head>
+    <body>
+        <div>
+            <h1>
+                hello me!
+            </h1>
+        </div>
+            <img src="pictures/image1.jpg" id="pic1">
+    <button id="btn1" class="btn-primary"> i will make this picture go away </button>
+    <button id="btn2" class="btn-warning"> i will make the picture fade away </button>
+    <button id="btn3" class="btn-danger"> alert </button>
+
+    <script src="script.js"></script>
+    <script>
+
+            $(Document).ready(function(){
+                $("#btn3").click(function(){
+                    alert("hello! i am alert box!!");
+                });
+            });
+            $(Document).ready(function(){
+                $("#btn1").click(function(){
+                    $("#pic1").toggle();
+        
+                });
+            });
+
+            $(Document).ready(function(){
+                $("#btn2").click(function(){
+                    $("#pic1").toggle(500);
+        
+                });
+            });
+            
+    
+    </script>
+       
+    </body>
+</html>
